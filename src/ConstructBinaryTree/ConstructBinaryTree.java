@@ -58,7 +58,7 @@ public class ConstructBinaryTree {
         }
     }
 
-    static class BinaryTreeNode {
+    private static class BinaryTreeNode {
         int value;
         BinaryTreeNode leftChild;
         BinaryTreeNode rightChild;
