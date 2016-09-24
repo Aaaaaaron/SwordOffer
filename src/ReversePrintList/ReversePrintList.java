@@ -1,7 +1,5 @@
 package ReversePrintList;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Stack;
 
 /**
@@ -25,7 +23,6 @@ public class ReversePrintList {
 
     //递归版本
     public static void printListFromTailToHead ( ListNode listNode ) {
-        List list = new ArrayList();
         if ( listNode != null ) {
             printListFromTailToHead( listNode.next );
             System.out.println( listNode.value );
