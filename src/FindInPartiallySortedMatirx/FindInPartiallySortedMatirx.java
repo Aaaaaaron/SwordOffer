@@ -16,15 +16,12 @@ public class FindInPartiallySortedMatirx {
         if ( array == null || row > array[ 0 ].length - 1 || column < 0 ) {
             return false;
         }
-        if ( array[ row ][ column ] > num ) {
+        if ( array[ row ][ column ] > num )
             return find( array, row, column - 1, num );
-        }
-        else if ( array[ row ][ column ] < num ) {
+        else if ( array[ row ][ column ] < num )
             return find( array, row + 1, column, num );
-        }
-        else {
+        else
             return true;
-        }
     }
 
     //非递归版本
